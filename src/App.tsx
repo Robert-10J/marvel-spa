@@ -35,7 +35,7 @@ function App() {
 
       { isLoading && <Spinner /> }
 
-      <main className='grid lg:grid-cols-4 md:grid-cols-1 md:mx-20 gap-10 py-10 mt-3 overflow-y-auto relative'>
+      <main className='grid lg:grid-cols-4 md:grid-cols-1 md:mx-20 gap-10 py-10 gap-y-20 mt-3 overflow-y-auto relative'>
         { 
           comics.map(comic => {
             return (

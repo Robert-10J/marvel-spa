@@ -5,7 +5,7 @@ import { type Root } from '../types'
 const ID_COMIC = 0
 
 const ENDPOINTS_API = {
-  COMICS: `http://gateway.marvel.com/v1/public/comics?ts=${KEYS.TS}&apikey=${KEYS.API_KEY}&hash=${KEYS.HASH}`,
+  COMICS: `http://gateway.marvel.com/v1/public/comics?limit=100&ts=${KEYS.TS}&apikey=${KEYS.API_KEY}&hash=${KEYS.HASH}`,
   COMIC: `http://gateway.marvel.com/v1/public/comics/${ID_COMIC}?ts=${KEYS.TS}&apikey=${KEYS.API_KEY}&hash=${KEYS.HASH}`
 }
 

@@ -1,4 +1,4 @@
-export type Root = {
+export type ResponseComics = {
   code: number
   status: string
   copyright: string

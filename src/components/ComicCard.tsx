@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { type Comic } from '../types'
 
 const ComicCard = ({ comic }: { comic: Comic }) => {
@@ -19,23 +20,10 @@ const ComicCard = ({ comic }: { comic: Comic }) => {
           {title}
         </p>
 
-        <a 
-          href="" 
+        <Link
+          to={`/comic/${comic.id}`} 
           className='text-center roboto-medium py-2 rounded-lg hover:cursor-pointer w-1/2 uppercase text-white bg-gradient-to-tr from-red-500 to-red-700 hover:to-red-800'
-        >Ver más</a>
-
-        {/* <>
-          {
-            prices.map(price => (
-              <p
-                key={price.type}
-                className='text-gray-600'
-              >
-                Precio: <span className='roboto-light'>${price.price}</span>
-              </p>
-            ))
-          }
-        </> */}
+        >Ver más</Link>
       </div>
     </div>
   )

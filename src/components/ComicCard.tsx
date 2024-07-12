@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom'
 import { type Comic } from '../types'
 
 const ComicCard = ({ comic }: { comic: Comic }) => {
-
   const { title, thumbnail } = comic
 
   return (
@@ -22,7 +21,7 @@ const ComicCard = ({ comic }: { comic: Comic }) => {
 
         <Link
           to={`/comic/${comic.id}`} 
-          className='text-center roboto-medium py-2 rounded-lg hover:cursor-pointer w-1/2 uppercase text-white bg-gradient-to-tr from-red-500 to-red-700 hover:to-red-800'
+          className='text-center roboto-medium py-2 rounded-lg hover:cursor-pointer w-1/2 uppercase text-white bg-gradient-to-tr hover:from-red-400 from-red-500 to-red-700 hover:to-red-800 transition-all'
         >Ver más</Link>
       </div>
     </div>

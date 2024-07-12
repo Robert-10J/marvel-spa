@@ -11,8 +11,6 @@ const Spinner = () => {
         <span className="sr-only">Cargando comics...</span>
       </div>
     </div>
-
-
   )
 }
 

@@ -8,7 +8,7 @@ const Layout = () => {
         
           <h1 
             className='text-6xl roboto-black py-1 px-0 h-full mx-2 bg-gradient-to-r from-red-600 via-red-400 to-red-600 inline-block text-transparent bg-clip-text'
-          >Marvel</h1>
+          >Marvel Comics</h1>
         </Link>
       </header>
 

@@ -6,7 +6,6 @@ import { type Comic } from '../types'
 const Comic = () => {
   const idComic = useParams()
   const ID_COMIC = idComic.id as unknown as number
-
   console.log(ID_COMIC)
 
   const [comic, setComic] = useState<Comic>({} as Comic)
@@ -15,15 +14,14 @@ const Comic = () => {
     try {
       const getComics = async () => {
         const dataComic = await fetchComicById(ID_COMIC)
+        console.log(dataComic)
         setComic(dataComic)
       }
-      
       getComics()
     } catch (error) {
       console.error(error)
     }
   }, [])
-  console.log(comic)
 
   const AUTHORS_IS_EMPTY = comic?.creators.items.length === 0
 

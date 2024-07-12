@@ -10,7 +10,7 @@ const ComicCard = ({ comic }: { comic: Comic }) => {
       className='p-2 shadow-lg bg-transparent rounded-md flex flex-col items-center justify-center gap-2 w-full hover:transition hover:duration-300 hover:scale-105'
     >
       <img
-        src={`${thumbnail.path}.jpg`}
+        src={`${thumbnail.path}.${thumbnail.extension}`}
         alt={`Imagen del comic ${title}`}
         className='w-3/4'
       />
